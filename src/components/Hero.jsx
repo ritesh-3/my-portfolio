@@ -2,6 +2,7 @@ import React from 'react'
 import avatar from '../assets/my_avatar.png'
 import { MySocials, selfDescription } from '../constants/contsants'
 import { FaArrowDown } from 'react-icons/fa'
+import myresume from '../assets/myResume.pdf'
 
 
 
@@ -36,7 +37,7 @@ const Hero = () => {
                     className='w-60 h-60   md:h-72 object-cover object-top
                   bg-gradient-to-b from-rose-600 rounded-xl pt-5'
                 />
-                <a href="../assets/myResume.pdf" download={true}
+                <a href={myresume} download={true}
                     className='flex items-center justify-center mt-7
             bg-gradient-to-r from-rose-600 to to-teal-500 text-white
             py-2 rounded-lg'
